@@ -22,7 +22,7 @@
     "pretty:fix": "prettier --write \"./**/*.ts\""
   },
   "dependencies": {
-    "@airswap/libraries": "4.3.4",
+    "@airswap/libraries": "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-libraries-4.3.4.tgz",
     "@oclif/command": "^1.8.22",
     "@oclif/config": "^1.18.8",
     "@oclif/plugin-help": "^5.2.6",
