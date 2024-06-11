@@ -13,6 +13,7 @@
   "bugs": "https://github.com/airswap/airswap-cli/issues",
   "scripts": {
     "build": "shx rm -rf lib && tsc -b",
+    "dist": "yarn build && mkdir -p dist && npm pack --pack-destination dist",
     "postpack": "shx rm -f oclif.manifest.json",
     "prepack": "yarn build && oclif manifest && oclif readme",
     "version": "oclif-dev readme && git add README.md",
