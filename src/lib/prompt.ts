@@ -150,7 +150,7 @@ export async function getTokenList(metadata, label) {
       conform: value => {
         const symbols = value.split(',')
         for (const i in symbols) {
-          if (!(symbols[i].trim().toUpperCase() in metadata.bySymbol)) return false
+          if (!(symbols[i].trim() in metadata.bySymbol)) return false
         }
         return true
       },
@@ -159,7 +159,7 @@ export async function getTokenList(metadata, label) {
   const tokens = {}
   values = values.split(',')
   for (const val in values) {
-    tokens[val] = metadata.bySymbol[values[val].trim().toUpperCase()]
+    tokens[val] = metadata.bySymbol[values[val].trim()]
   }
   return tokens
 }
