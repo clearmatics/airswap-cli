@@ -18,10 +18,10 @@ AirSwap CLI uses the native password manager of your system. On macOS, keys are 
 
 # Quick Start
 
-Install the CLI globally
+Install the CLI globally from this fork
 
 ```
-$ yarn global add airswap
+$ npm install -g https://github.com/clearmatics/airswap-cli/releases/download/pcgc-r6.2/airswap-4.3.1-autonity.4.tgz
 ```
 
 Create a new account to use for the CLI (recommended)
